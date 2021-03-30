@@ -1,2 +1,2 @@
 # Advertismet
- FPGA project simulating a farmacy-like advertisment
+ FPGA project simulating a pharmacy-like advertisment
