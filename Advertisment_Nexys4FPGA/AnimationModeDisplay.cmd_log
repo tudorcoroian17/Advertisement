@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/.Xilinx/AdvertismentPrjDSD/AnimationModeDisplay.xst" -ofn "C:/.Xilinx/AdvertismentPrjDSD/AnimationModeDisplay.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/AdvertismentPrjDSD/AnimationModeDisplay.xst" -ofn "C:/.Xilinx/AdvertismentPrjDSD/AnimationModeDisplay.syr" 

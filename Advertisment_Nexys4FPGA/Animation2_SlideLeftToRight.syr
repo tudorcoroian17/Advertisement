@@ -1,0 +1,2918 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Reading design: Animation2_SlideLeftToRight.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Animation2_SlideLeftToRight.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Animation2_SlideLeftToRight"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Animation2_SlideLeftToRight
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\.Xilinx\AdvertismentPrjDSD\FrequencyDivider2.vhd" into library work
+Parsing entity <FrequencyDivider2>.
+Parsing architecture <arch4> of entity <frequencydivider2>.
+Parsing VHDL file "C:\.Xilinx\AdvertismentPrjDSD\Animation2_SlideLeftToRight.vhd" into library work
+Parsing entity <Animation2_SlideLeftToRight>.
+Parsing architecture <arch11> of entity <animation2_slidelefttoright>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Animation2_SlideLeftToRight> (architecture <arch11>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation2_SlideLeftToRight.vhd" Line 26: enable should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation2_SlideLeftToRight.vhd" Line 37: tempword should be on the sensitivity list of the process
+
+Elaborating entity <FrequencyDivider2> (architecture <arch4>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "C:\.Xilinx\AdvertismentPrjDSD\FrequencyDivider2.vhd" Line 19: Using initial value "111111111111111111111111111" for number since it is never assigned
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Animation2_SlideLeftToRight>.
+    Related source file is "C:\.Xilinx\AdvertismentPrjDSD\Animation2_SlideLeftToRight.vhd".
+    Found 7-bit register for signal <dummyLetter>.
+    Found 1-bit register for signal <tempWord<55>>.
+    Found 1-bit register for signal <tempWord<54>>.
+    Found 1-bit register for signal <tempWord<53>>.
+    Found 1-bit register for signal <tempWord<52>>.
+    Found 1-bit register for signal <tempWord<51>>.
+    Found 1-bit register for signal <tempWord<50>>.
+    Found 1-bit register for signal <tempWord<49>>.
+    Found 1-bit register for signal <tempWord<48>>.
+    Found 1-bit register for signal <tempWord<47>>.
+    Found 1-bit register for signal <tempWord<46>>.
+    Found 1-bit register for signal <tempWord<45>>.
+    Found 1-bit register for signal <tempWord<44>>.
+    Found 1-bit register for signal <tempWord<43>>.
+    Found 1-bit register for signal <tempWord<42>>.
+    Found 1-bit register for signal <tempWord<41>>.
+    Found 1-bit register for signal <tempWord<40>>.
+    Found 1-bit register for signal <tempWord<39>>.
+    Found 1-bit register for signal <tempWord<38>>.
+    Found 1-bit register for signal <tempWord<37>>.
+    Found 1-bit register for signal <tempWord<36>>.
+    Found 1-bit register for signal <tempWord<35>>.
+    Found 1-bit register for signal <tempWord<34>>.
+    Found 1-bit register for signal <tempWord<33>>.
+    Found 1-bit register for signal <tempWord<32>>.
+    Found 1-bit register for signal <tempWord<31>>.
+    Found 1-bit register for signal <tempWord<30>>.
+    Found 1-bit register for signal <tempWord<29>>.
+    Found 1-bit register for signal <tempWord<28>>.
+    Found 1-bit register for signal <tempWord<27>>.
+    Found 1-bit register for signal <tempWord<26>>.
+    Found 1-bit register for signal <tempWord<25>>.
+    Found 1-bit register for signal <tempWord<24>>.
+    Found 1-bit register for signal <tempWord<23>>.
+    Found 1-bit register for signal <tempWord<22>>.
+    Found 1-bit register for signal <tempWord<21>>.
+    Found 1-bit register for signal <tempWord<20>>.
+    Found 1-bit register for signal <tempWord<19>>.
+    Found 1-bit register for signal <tempWord<18>>.
+    Found 1-bit register for signal <tempWord<17>>.
+    Found 1-bit register for signal <tempWord<16>>.
+    Found 1-bit register for signal <tempWord<15>>.
+    Found 1-bit register for signal <tempWord<14>>.
+    Found 1-bit register for signal <tempWord<13>>.
+    Found 1-bit register for signal <tempWord<12>>.
+    Found 1-bit register for signal <tempWord<11>>.
+    Found 1-bit register for signal <tempWord<10>>.
+    Found 1-bit register for signal <tempWord<9>>.
+    Found 1-bit register for signal <tempWord<8>>.
+    Found 1-bit register for signal <tempWord<7>>.
+    Found 1-bit register for signal <tempWord<6>>.
+    Found 1-bit register for signal <tempWord<5>>.
+    Found 1-bit register for signal <tempWord<4>>.
+    Found 1-bit register for signal <tempWord<3>>.
+    Found 1-bit register for signal <tempWord<2>>.
+    Found 1-bit register for signal <tempWord<1>>.
+    Found 1-bit register for signal <tempWord<0>>.
+    Summary:
+	inferred  63 D-type flip-flop(s).
+Unit <Animation2_SlideLeftToRight> synthesized.
+
+Synthesizing Unit <FrequencyDivider2>.
+    Related source file is "C:\.Xilinx\AdvertismentPrjDSD\FrequencyDivider2.vhd".
+        counterSize = 26
+    Found 1-bit register for signal <newClock>.
+    Found 27-bit register for signal <counter>.
+    Found 27-bit adder for signal <counter[26]_GND_7_o_add_0_OUT> created at line 23.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+Unit <FrequencyDivider2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 27-bit adder                                          : 1
+# Registers                                            : 59
+ 1-bit register                                        : 57
+ 27-bit register                                       : 1
+ 7-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <FrequencyDivider2>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <FrequencyDivider2> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    tempWord_1 in unit <Animation2_SlideLeftToRight>
+    tempWord_2 in unit <Animation2_SlideLeftToRight>
+    tempWord_0 in unit <Animation2_SlideLeftToRight>
+    tempWord_3 in unit <Animation2_SlideLeftToRight>
+    tempWord_4 in unit <Animation2_SlideLeftToRight>
+    tempWord_5 in unit <Animation2_SlideLeftToRight>
+    tempWord_6 in unit <Animation2_SlideLeftToRight>
+    tempWord_8 in unit <Animation2_SlideLeftToRight>
+    tempWord_9 in unit <Animation2_SlideLeftToRight>
+    tempWord_7 in unit <Animation2_SlideLeftToRight>
+    tempWord_10 in unit <Animation2_SlideLeftToRight>
+    tempWord_11 in unit <Animation2_SlideLeftToRight>
+    tempWord_12 in unit <Animation2_SlideLeftToRight>
+    tempWord_13 in unit <Animation2_SlideLeftToRight>
+    tempWord_15 in unit <Animation2_SlideLeftToRight>
+    tempWord_16 in unit <Animation2_SlideLeftToRight>
+    tempWord_14 in unit <Animation2_SlideLeftToRight>
+    tempWord_17 in unit <Animation2_SlideLeftToRight>
+    tempWord_18 in unit <Animation2_SlideLeftToRight>
+    tempWord_19 in unit <Animation2_SlideLeftToRight>
+    tempWord_20 in unit <Animation2_SlideLeftToRight>
+    tempWord_21 in unit <Animation2_SlideLeftToRight>
+    tempWord_22 in unit <Animation2_SlideLeftToRight>
+    tempWord_23 in unit <Animation2_SlideLeftToRight>
+    tempWord_24 in unit <Animation2_SlideLeftToRight>
+    tempWord_25 in unit <Animation2_SlideLeftToRight>
+    tempWord_26 in unit <Animation2_SlideLeftToRight>
+    tempWord_27 in unit <Animation2_SlideLeftToRight>
+    tempWord_28 in unit <Animation2_SlideLeftToRight>
+    tempWord_30 in unit <Animation2_SlideLeftToRight>
+    tempWord_31 in unit <Animation2_SlideLeftToRight>
+    tempWord_29 in unit <Animation2_SlideLeftToRight>
+    tempWord_32 in unit <Animation2_SlideLeftToRight>
+    tempWord_33 in unit <Animation2_SlideLeftToRight>
+    tempWord_34 in unit <Animation2_SlideLeftToRight>
+    tempWord_35 in unit <Animation2_SlideLeftToRight>
+    tempWord_37 in unit <Animation2_SlideLeftToRight>
+    tempWord_38 in unit <Animation2_SlideLeftToRight>
+    tempWord_36 in unit <Animation2_SlideLeftToRight>
+    tempWord_39 in unit <Animation2_SlideLeftToRight>
+    tempWord_40 in unit <Animation2_SlideLeftToRight>
+    tempWord_41 in unit <Animation2_SlideLeftToRight>
+    tempWord_42 in unit <Animation2_SlideLeftToRight>
+    tempWord_44 in unit <Animation2_SlideLeftToRight>
+    tempWord_45 in unit <Animation2_SlideLeftToRight>
+    tempWord_43 in unit <Animation2_SlideLeftToRight>
+    tempWord_46 in unit <Animation2_SlideLeftToRight>
+    tempWord_47 in unit <Animation2_SlideLeftToRight>
+    tempWord_48 in unit <Animation2_SlideLeftToRight>
+    tempWord_49 in unit <Animation2_SlideLeftToRight>
+    tempWord_50 in unit <Animation2_SlideLeftToRight>
+    tempWord_51 in unit <Animation2_SlideLeftToRight>
+    tempWord_52 in unit <Animation2_SlideLeftToRight>
+    tempWord_53 in unit <Animation2_SlideLeftToRight>
+    tempWord_54 in unit <Animation2_SlideLeftToRight>
+    tempWord_55 in unit <Animation2_SlideLeftToRight>
+
+
+Optimizing unit <Animation2_SlideLeftToRight> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Animation2_SlideLeftToRight, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 147
+ Flip-Flops                                            : 147
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Animation2_SlideLeftToRight.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 272
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 26
+#      LUT2                        : 127
+#      LUT3                        : 57
+#      LUT5                        : 1
+#      LUT6                        : 4
+#      MUXCY                       : 26
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 203
+#      FD                          : 16
+#      FDC                         : 56
+#      FDE                         : 7
+#      FDP                         : 56
+#      FDR                         : 12
+#      LDC                         : 56
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 113
+#      IBUF                        : 57
+#      OBUF                        : 56
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             203  out of  126800     0%  
+ Number of Slice LUTs:                  217  out of  63400     0%  
+    Number used as Logic:               217  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    306
+   Number with an unused Flip Flop:     103  out of    306    33%  
+   Number with an unused LUT:            89  out of    306    29%  
+   Number of fully used LUT-FF pairs:   114  out of    306    37%  
+   Number of unique control sets:       171
+
+IO Utilization: 
+ Number of IOs:                         114
+ Number of bonded IOBs:                 114  out of    210    54%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------+-------------------------+-------+
+Clock Signal                                         | Clock buffer(FF name)   | Load  |
+-----------------------------------------------------+-------------------------+-------+
+C_FD2/newClock                                       | BUFG                    | 119   |
+clock                                                | BUFGP                   | 28    |
+enable_word[55]_AND_1_o(enable_word[55]_AND_1_o1:O)  | NONE(*)(tempWord_55_LDC)| 1     |
+enable_word[54]_AND_3_o(enable_word[54]_AND_3_o1:O)  | NONE(*)(tempWord_54_LDC)| 1     |
+enable_word[53]_AND_5_o(enable_word[53]_AND_5_o1:O)  | NONE(*)(tempWord_53_LDC)| 1     |
+enable_word[52]_AND_7_o(enable_word[52]_AND_7_o1:O)  | NONE(*)(tempWord_52_LDC)| 1     |
+enable_word[51]_AND_9_o(enable_word[51]_AND_9_o1:O)  | NONE(*)(tempWord_51_LDC)| 1     |
+enable_word[50]_AND_11_o(enable_word[50]_AND_11_o1:O)| NONE(*)(tempWord_50_LDC)| 1     |
+enable_word[49]_AND_13_o(enable_word[49]_AND_13_o1:O)| NONE(*)(tempWord_49_LDC)| 1     |
+enable_word[48]_AND_15_o(enable_word[48]_AND_15_o1:O)| NONE(*)(tempWord_48_LDC)| 1     |
+enable_word[47]_AND_17_o(enable_word[47]_AND_17_o1:O)| NONE(*)(tempWord_47_LDC)| 1     |
+enable_word[46]_AND_19_o(enable_word[46]_AND_19_o1:O)| NONE(*)(tempWord_46_LDC)| 1     |
+enable_word[43]_AND_25_o(enable_word[43]_AND_25_o1:O)| NONE(*)(tempWord_43_LDC)| 1     |
+enable_word[45]_AND_21_o(enable_word[45]_AND_21_o1:O)| NONE(*)(tempWord_45_LDC)| 1     |
+enable_word[44]_AND_23_o(enable_word[44]_AND_23_o1:O)| NONE(*)(tempWord_44_LDC)| 1     |
+enable_word[42]_AND_27_o(enable_word[42]_AND_27_o1:O)| NONE(*)(tempWord_42_LDC)| 1     |
+enable_word[41]_AND_29_o(enable_word[41]_AND_29_o1:O)| NONE(*)(tempWord_41_LDC)| 1     |
+enable_word[40]_AND_31_o(enable_word[40]_AND_31_o1:O)| NONE(*)(tempWord_40_LDC)| 1     |
+enable_word[39]_AND_33_o(enable_word[39]_AND_33_o1:O)| NONE(*)(tempWord_39_LDC)| 1     |
+enable_word[36]_AND_39_o(enable_word[36]_AND_39_o1:O)| NONE(*)(tempWord_36_LDC)| 1     |
+enable_word[38]_AND_35_o(enable_word[38]_AND_35_o1:O)| NONE(*)(tempWord_38_LDC)| 1     |
+enable_word[37]_AND_37_o(enable_word[37]_AND_37_o1:O)| NONE(*)(tempWord_37_LDC)| 1     |
+enable_word[35]_AND_41_o(enable_word[35]_AND_41_o1:O)| NONE(*)(tempWord_35_LDC)| 1     |
+enable_word[34]_AND_43_o(enable_word[34]_AND_43_o1:O)| NONE(*)(tempWord_34_LDC)| 1     |
+enable_word[33]_AND_45_o(enable_word[33]_AND_45_o1:O)| NONE(*)(tempWord_33_LDC)| 1     |
+enable_word[32]_AND_47_o(enable_word[32]_AND_47_o1:O)| NONE(*)(tempWord_32_LDC)| 1     |
+enable_word[29]_AND_53_o(enable_word[29]_AND_53_o1:O)| NONE(*)(tempWord_29_LDC)| 1     |
+enable_word[31]_AND_49_o(enable_word[31]_AND_49_o1:O)| NONE(*)(tempWord_31_LDC)| 1     |
+enable_word[30]_AND_51_o(enable_word[30]_AND_51_o1:O)| NONE(*)(tempWord_30_LDC)| 1     |
+enable_word[28]_AND_55_o(enable_word[28]_AND_55_o1:O)| NONE(*)(tempWord_28_LDC)| 1     |
+enable_word[27]_AND_57_o(enable_word[27]_AND_57_o1:O)| NONE(*)(tempWord_27_LDC)| 1     |
+enable_word[26]_AND_59_o(enable_word[26]_AND_59_o1:O)| NONE(*)(tempWord_26_LDC)| 1     |
+enable_word[25]_AND_61_o(enable_word[25]_AND_61_o1:O)| NONE(*)(tempWord_25_LDC)| 1     |
+enable_word[24]_AND_63_o(enable_word[24]_AND_63_o1:O)| NONE(*)(tempWord_24_LDC)| 1     |
+enable_word[23]_AND_65_o(enable_word[23]_AND_65_o1:O)| NONE(*)(tempWord_23_LDC)| 1     |
+enable_word[22]_AND_67_o(enable_word[22]_AND_67_o1:O)| NONE(*)(tempWord_22_LDC)| 1     |
+enable_word[21]_AND_69_o(enable_word[21]_AND_69_o1:O)| NONE(*)(tempWord_21_LDC)| 1     |
+enable_word[20]_AND_71_o(enable_word[20]_AND_71_o1:O)| NONE(*)(tempWord_20_LDC)| 1     |
+enable_word[19]_AND_73_o(enable_word[19]_AND_73_o1:O)| NONE(*)(tempWord_19_LDC)| 1     |
+enable_word[18]_AND_75_o(enable_word[18]_AND_75_o1:O)| NONE(*)(tempWord_18_LDC)| 1     |
+enable_word[17]_AND_77_o(enable_word[17]_AND_77_o1:O)| NONE(*)(tempWord_17_LDC)| 1     |
+enable_word[14]_AND_83_o(enable_word[14]_AND_83_o1:O)| NONE(*)(tempWord_14_LDC)| 1     |
+enable_word[16]_AND_79_o(enable_word[16]_AND_79_o1:O)| NONE(*)(tempWord_16_LDC)| 1     |
+enable_word[15]_AND_81_o(enable_word[15]_AND_81_o1:O)| NONE(*)(tempWord_15_LDC)| 1     |
+enable_word[13]_AND_85_o(enable_word[13]_AND_85_o1:O)| NONE(*)(tempWord_13_LDC)| 1     |
+enable_word[12]_AND_87_o(enable_word[12]_AND_87_o1:O)| NONE(*)(tempWord_12_LDC)| 1     |
+enable_word[11]_AND_89_o(enable_word[11]_AND_89_o1:O)| NONE(*)(tempWord_11_LDC)| 1     |
+enable_word[10]_AND_91_o(enable_word[10]_AND_91_o1:O)| NONE(*)(tempWord_10_LDC)| 1     |
+enable_word[7]_AND_97_o(enable_word[7]_AND_97_o1:O)  | NONE(*)(tempWord_7_LDC) | 1     |
+enable_word[9]_AND_93_o(enable_word[9]_AND_93_o1:O)  | NONE(*)(tempWord_9_LDC) | 1     |
+enable_word[8]_AND_95_o(enable_word[8]_AND_95_o1:O)  | NONE(*)(tempWord_8_LDC) | 1     |
+enable_word[6]_AND_99_o(enable_word[6]_AND_99_o1:O)  | NONE(*)(tempWord_6_LDC) | 1     |
+enable_word[5]_AND_101_o(enable_word[5]_AND_101_o1:O)| NONE(*)(tempWord_5_LDC) | 1     |
+enable_word[4]_AND_103_o(enable_word[4]_AND_103_o1:O)| NONE(*)(tempWord_4_LDC) | 1     |
+enable_word[3]_AND_105_o(enable_word[3]_AND_105_o1:O)| NONE(*)(tempWord_3_LDC) | 1     |
+enable_word[0]_AND_111_o(enable_word[0]_AND_111_o1:O)| NONE(*)(tempWord_0_LDC) | 1     |
+enable_word[2]_AND_107_o(enable_word[2]_AND_107_o1:O)| NONE(*)(tempWord_2_LDC) | 1     |
+enable_word[1]_AND_109_o(enable_word[1]_AND_109_o1:O)| NONE(*)(tempWord_1_LDC) | 1     |
+-----------------------------------------------------+-------------------------+-------+
+(*) These 56 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.533ns (Maximum Frequency: 394.772MHz)
+   Minimum input arrival time before clock: 1.229ns
+   Maximum output required time after clock: 1.369ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'C_FD2/newClock'
+  Clock period: 0.845ns (frequency: 1183.012MHz)
+  Total number of paths / destination ports: 224 / 119
+-------------------------------------------------------------------------
+Delay:               0.845ns (Levels of Logic = 1)
+  Source:            tempWord_0_P_0 (FF)
+  Destination:       dummyLetter_0 (FF)
+  Source Clock:      C_FD2/newClock rising
+  Destination Clock: C_FD2/newClock rising
+
+  Data Path: tempWord_0_P_0 to dummyLetter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.361   0.379  tempWord_0_P_0 (tempWord_0_P_0)
+     LUT3:I1->O            2   0.097   0.000  tempWord_01 (tempWord_0)
+     FDE:D                     0.008          dummyLetter_0
+    ----------------------------------------
+    Total                      0.845ns (0.466ns logic, 0.379ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 2.533ns (frequency: 394.772MHz)
+  Total number of paths / destination ports: 1108 / 40
+-------------------------------------------------------------------------
+Delay:               2.533ns (Levels of Logic = 2)
+  Source:            C_FD2/counter_23 (FF)
+  Destination:       C_FD2/counter_15 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: C_FD2/counter_23 to C_FD2/counter_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.361   0.688  C_FD2/counter_23 (C_FD2/counter_23)
+     LUT5:I0->O            1   0.097   0.556  C_FD2/_n0012<26>6 (C_FD2/_n0012<26>5)
+     LUT6:I2->O           27   0.097   0.385  C_FD2/_n0012<26>7 (C_FD2/_n0012)
+     FDR:R                     0.349          C_FD2/counter_15
+    ----------------------------------------
+    Total                      2.533ns (0.904ns logic, 1.629ns route)
+                                       (35.7% logic, 64.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'C_FD2/newClock'
+  Total number of paths / destination ports: 231 / 119
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_55_C_55 (FF)
+  Destination Clock: C_FD2/newClock rising
+
+  Data Path: enable to tempWord_55_C_55
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[55]_AND_1_o1 (enable_word[55]_AND_1_o)
+     FDP:PRE                   0.349          tempWord_55_P_55
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[55]_AND_1_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_55_LDC (LATCH)
+  Destination Clock: enable_word[55]_AND_1_o falling
+
+  Data Path: enable to tempWord_55_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[55]_AND_2_o1 (enable_word[55]_AND_2_o)
+     LDC:CLR                   0.349          tempWord_55_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[54]_AND_3_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_54_LDC (LATCH)
+  Destination Clock: enable_word[54]_AND_3_o falling
+
+  Data Path: enable to tempWord_54_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[54]_AND_4_o1 (enable_word[54]_AND_4_o)
+     LDC:CLR                   0.349          tempWord_54_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[53]_AND_5_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_53_LDC (LATCH)
+  Destination Clock: enable_word[53]_AND_5_o falling
+
+  Data Path: enable to tempWord_53_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[53]_AND_6_o1 (enable_word[53]_AND_6_o)
+     LDC:CLR                   0.349          tempWord_53_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[52]_AND_7_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_52_LDC (LATCH)
+  Destination Clock: enable_word[52]_AND_7_o falling
+
+  Data Path: enable to tempWord_52_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[52]_AND_8_o1 (enable_word[52]_AND_8_o)
+     LDC:CLR                   0.349          tempWord_52_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[51]_AND_9_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_51_LDC (LATCH)
+  Destination Clock: enable_word[51]_AND_9_o falling
+
+  Data Path: enable to tempWord_51_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[51]_AND_10_o1 (enable_word[51]_AND_10_o)
+     LDC:CLR                   0.349          tempWord_51_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[50]_AND_11_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_50_LDC (LATCH)
+  Destination Clock: enable_word[50]_AND_11_o falling
+
+  Data Path: enable to tempWord_50_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[50]_AND_12_o1 (enable_word[50]_AND_12_o)
+     LDC:CLR                   0.349          tempWord_50_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[49]_AND_13_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_49_LDC (LATCH)
+  Destination Clock: enable_word[49]_AND_13_o falling
+
+  Data Path: enable to tempWord_49_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[49]_AND_14_o1 (enable_word[49]_AND_14_o)
+     LDC:CLR                   0.349          tempWord_49_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[48]_AND_15_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_48_LDC (LATCH)
+  Destination Clock: enable_word[48]_AND_15_o falling
+
+  Data Path: enable to tempWord_48_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[48]_AND_16_o1 (enable_word[48]_AND_16_o)
+     LDC:CLR                   0.349          tempWord_48_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[47]_AND_17_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_47_LDC (LATCH)
+  Destination Clock: enable_word[47]_AND_17_o falling
+
+  Data Path: enable to tempWord_47_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[47]_AND_18_o1 (enable_word[47]_AND_18_o)
+     LDC:CLR                   0.349          tempWord_47_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[46]_AND_19_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_46_LDC (LATCH)
+  Destination Clock: enable_word[46]_AND_19_o falling
+
+  Data Path: enable to tempWord_46_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[46]_AND_20_o1 (enable_word[46]_AND_20_o)
+     LDC:CLR                   0.349          tempWord_46_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[43]_AND_25_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_43_LDC (LATCH)
+  Destination Clock: enable_word[43]_AND_25_o falling
+
+  Data Path: enable to tempWord_43_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[43]_AND_26_o1 (enable_word[43]_AND_26_o)
+     LDC:CLR                   0.349          tempWord_43_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[45]_AND_21_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_45_LDC (LATCH)
+  Destination Clock: enable_word[45]_AND_21_o falling
+
+  Data Path: enable to tempWord_45_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[45]_AND_22_o1 (enable_word[45]_AND_22_o)
+     LDC:CLR                   0.349          tempWord_45_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[44]_AND_23_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_44_LDC (LATCH)
+  Destination Clock: enable_word[44]_AND_23_o falling
+
+  Data Path: enable to tempWord_44_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[44]_AND_24_o1 (enable_word[44]_AND_24_o)
+     LDC:CLR                   0.349          tempWord_44_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[42]_AND_27_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_42_LDC (LATCH)
+  Destination Clock: enable_word[42]_AND_27_o falling
+
+  Data Path: enable to tempWord_42_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[42]_AND_28_o1 (enable_word[42]_AND_28_o)
+     LDC:CLR                   0.349          tempWord_42_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[41]_AND_29_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_41_LDC (LATCH)
+  Destination Clock: enable_word[41]_AND_29_o falling
+
+  Data Path: enable to tempWord_41_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[41]_AND_30_o1 (enable_word[41]_AND_30_o)
+     LDC:CLR                   0.349          tempWord_41_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[40]_AND_31_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_40_LDC (LATCH)
+  Destination Clock: enable_word[40]_AND_31_o falling
+
+  Data Path: enable to tempWord_40_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[40]_AND_32_o1 (enable_word[40]_AND_32_o)
+     LDC:CLR                   0.349          tempWord_40_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[39]_AND_33_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_39_LDC (LATCH)
+  Destination Clock: enable_word[39]_AND_33_o falling
+
+  Data Path: enable to tempWord_39_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[39]_AND_34_o1 (enable_word[39]_AND_34_o)
+     LDC:CLR                   0.349          tempWord_39_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[36]_AND_39_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_36_LDC (LATCH)
+  Destination Clock: enable_word[36]_AND_39_o falling
+
+  Data Path: enable to tempWord_36_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[36]_AND_40_o1 (enable_word[36]_AND_40_o)
+     LDC:CLR                   0.349          tempWord_36_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[38]_AND_35_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_38_LDC (LATCH)
+  Destination Clock: enable_word[38]_AND_35_o falling
+
+  Data Path: enable to tempWord_38_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[38]_AND_36_o1 (enable_word[38]_AND_36_o)
+     LDC:CLR                   0.349          tempWord_38_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[37]_AND_37_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_37_LDC (LATCH)
+  Destination Clock: enable_word[37]_AND_37_o falling
+
+  Data Path: enable to tempWord_37_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[37]_AND_38_o1 (enable_word[37]_AND_38_o)
+     LDC:CLR                   0.349          tempWord_37_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[35]_AND_41_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_35_LDC (LATCH)
+  Destination Clock: enable_word[35]_AND_41_o falling
+
+  Data Path: enable to tempWord_35_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[35]_AND_42_o1 (enable_word[35]_AND_42_o)
+     LDC:CLR                   0.349          tempWord_35_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[34]_AND_43_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_34_LDC (LATCH)
+  Destination Clock: enable_word[34]_AND_43_o falling
+
+  Data Path: enable to tempWord_34_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[34]_AND_44_o1 (enable_word[34]_AND_44_o)
+     LDC:CLR                   0.349          tempWord_34_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[33]_AND_45_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_33_LDC (LATCH)
+  Destination Clock: enable_word[33]_AND_45_o falling
+
+  Data Path: enable to tempWord_33_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[33]_AND_46_o1 (enable_word[33]_AND_46_o)
+     LDC:CLR                   0.349          tempWord_33_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[32]_AND_47_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_32_LDC (LATCH)
+  Destination Clock: enable_word[32]_AND_47_o falling
+
+  Data Path: enable to tempWord_32_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[32]_AND_48_o1 (enable_word[32]_AND_48_o)
+     LDC:CLR                   0.349          tempWord_32_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[29]_AND_53_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_29_LDC (LATCH)
+  Destination Clock: enable_word[29]_AND_53_o falling
+
+  Data Path: enable to tempWord_29_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[29]_AND_54_o1 (enable_word[29]_AND_54_o)
+     LDC:CLR                   0.349          tempWord_29_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[31]_AND_49_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_31_LDC (LATCH)
+  Destination Clock: enable_word[31]_AND_49_o falling
+
+  Data Path: enable to tempWord_31_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[31]_AND_50_o1 (enable_word[31]_AND_50_o)
+     LDC:CLR                   0.349          tempWord_31_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[30]_AND_51_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_30_LDC (LATCH)
+  Destination Clock: enable_word[30]_AND_51_o falling
+
+  Data Path: enable to tempWord_30_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[30]_AND_52_o1 (enable_word[30]_AND_52_o)
+     LDC:CLR                   0.349          tempWord_30_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[28]_AND_55_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_28_LDC (LATCH)
+  Destination Clock: enable_word[28]_AND_55_o falling
+
+  Data Path: enable to tempWord_28_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[28]_AND_56_o1 (enable_word[28]_AND_56_o)
+     LDC:CLR                   0.349          tempWord_28_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[27]_AND_57_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_27_LDC (LATCH)
+  Destination Clock: enable_word[27]_AND_57_o falling
+
+  Data Path: enable to tempWord_27_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[27]_AND_58_o1 (enable_word[27]_AND_58_o)
+     LDC:CLR                   0.349          tempWord_27_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[26]_AND_59_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_26_LDC (LATCH)
+  Destination Clock: enable_word[26]_AND_59_o falling
+
+  Data Path: enable to tempWord_26_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[26]_AND_60_o1 (enable_word[26]_AND_60_o)
+     LDC:CLR                   0.349          tempWord_26_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[25]_AND_61_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_25_LDC (LATCH)
+  Destination Clock: enable_word[25]_AND_61_o falling
+
+  Data Path: enable to tempWord_25_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[25]_AND_62_o1 (enable_word[25]_AND_62_o)
+     LDC:CLR                   0.349          tempWord_25_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[24]_AND_63_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_24_LDC (LATCH)
+  Destination Clock: enable_word[24]_AND_63_o falling
+
+  Data Path: enable to tempWord_24_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[24]_AND_64_o1 (enable_word[24]_AND_64_o)
+     LDC:CLR                   0.349          tempWord_24_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[23]_AND_65_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_23_LDC (LATCH)
+  Destination Clock: enable_word[23]_AND_65_o falling
+
+  Data Path: enable to tempWord_23_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[23]_AND_66_o1 (enable_word[23]_AND_66_o)
+     LDC:CLR                   0.349          tempWord_23_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[22]_AND_67_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_22_LDC (LATCH)
+  Destination Clock: enable_word[22]_AND_67_o falling
+
+  Data Path: enable to tempWord_22_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[22]_AND_68_o1 (enable_word[22]_AND_68_o)
+     LDC:CLR                   0.349          tempWord_22_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[21]_AND_69_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_21_LDC (LATCH)
+  Destination Clock: enable_word[21]_AND_69_o falling
+
+  Data Path: enable to tempWord_21_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[21]_AND_70_o1 (enable_word[21]_AND_70_o)
+     LDC:CLR                   0.349          tempWord_21_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[20]_AND_71_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_20_LDC (LATCH)
+  Destination Clock: enable_word[20]_AND_71_o falling
+
+  Data Path: enable to tempWord_20_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[20]_AND_72_o1 (enable_word[20]_AND_72_o)
+     LDC:CLR                   0.349          tempWord_20_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[19]_AND_73_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_19_LDC (LATCH)
+  Destination Clock: enable_word[19]_AND_73_o falling
+
+  Data Path: enable to tempWord_19_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[19]_AND_74_o1 (enable_word[19]_AND_74_o)
+     LDC:CLR                   0.349          tempWord_19_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[18]_AND_75_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_18_LDC (LATCH)
+  Destination Clock: enable_word[18]_AND_75_o falling
+
+  Data Path: enable to tempWord_18_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[18]_AND_76_o1 (enable_word[18]_AND_76_o)
+     LDC:CLR                   0.349          tempWord_18_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[17]_AND_77_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_17_LDC (LATCH)
+  Destination Clock: enable_word[17]_AND_77_o falling
+
+  Data Path: enable to tempWord_17_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[17]_AND_78_o1 (enable_word[17]_AND_78_o)
+     LDC:CLR                   0.349          tempWord_17_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[14]_AND_83_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_14_LDC (LATCH)
+  Destination Clock: enable_word[14]_AND_83_o falling
+
+  Data Path: enable to tempWord_14_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[14]_AND_84_o1 (enable_word[14]_AND_84_o)
+     LDC:CLR                   0.349          tempWord_14_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[16]_AND_79_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_16_LDC (LATCH)
+  Destination Clock: enable_word[16]_AND_79_o falling
+
+  Data Path: enable to tempWord_16_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[16]_AND_80_o1 (enable_word[16]_AND_80_o)
+     LDC:CLR                   0.349          tempWord_16_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[15]_AND_81_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_15_LDC (LATCH)
+  Destination Clock: enable_word[15]_AND_81_o falling
+
+  Data Path: enable to tempWord_15_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[15]_AND_82_o1 (enable_word[15]_AND_82_o)
+     LDC:CLR                   0.349          tempWord_15_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[13]_AND_85_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_13_LDC (LATCH)
+  Destination Clock: enable_word[13]_AND_85_o falling
+
+  Data Path: enable to tempWord_13_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[13]_AND_86_o1 (enable_word[13]_AND_86_o)
+     LDC:CLR                   0.349          tempWord_13_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[12]_AND_87_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_12_LDC (LATCH)
+  Destination Clock: enable_word[12]_AND_87_o falling
+
+  Data Path: enable to tempWord_12_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[12]_AND_88_o1 (enable_word[12]_AND_88_o)
+     LDC:CLR                   0.349          tempWord_12_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[11]_AND_89_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_11_LDC (LATCH)
+  Destination Clock: enable_word[11]_AND_89_o falling
+
+  Data Path: enable to tempWord_11_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[11]_AND_90_o1 (enable_word[11]_AND_90_o)
+     LDC:CLR                   0.349          tempWord_11_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[10]_AND_91_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_10_LDC (LATCH)
+  Destination Clock: enable_word[10]_AND_91_o falling
+
+  Data Path: enable to tempWord_10_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[10]_AND_92_o1 (enable_word[10]_AND_92_o)
+     LDC:CLR                   0.349          tempWord_10_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[7]_AND_97_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_7_LDC (LATCH)
+  Destination Clock: enable_word[7]_AND_97_o falling
+
+  Data Path: enable to tempWord_7_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[7]_AND_98_o1 (enable_word[7]_AND_98_o)
+     LDC:CLR                   0.349          tempWord_7_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[9]_AND_93_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_9_LDC (LATCH)
+  Destination Clock: enable_word[9]_AND_93_o falling
+
+  Data Path: enable to tempWord_9_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[9]_AND_94_o1 (enable_word[9]_AND_94_o)
+     LDC:CLR                   0.349          tempWord_9_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[8]_AND_95_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_8_LDC (LATCH)
+  Destination Clock: enable_word[8]_AND_95_o falling
+
+  Data Path: enable to tempWord_8_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[8]_AND_96_o1 (enable_word[8]_AND_96_o)
+     LDC:CLR                   0.349          tempWord_8_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[6]_AND_99_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_6_LDC (LATCH)
+  Destination Clock: enable_word[6]_AND_99_o falling
+
+  Data Path: enable to tempWord_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[6]_AND_100_o1 (enable_word[6]_AND_100_o)
+     LDC:CLR                   0.349          tempWord_6_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[5]_AND_101_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_5_LDC (LATCH)
+  Destination Clock: enable_word[5]_AND_101_o falling
+
+  Data Path: enable to tempWord_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[5]_AND_102_o1 (enable_word[5]_AND_102_o)
+     LDC:CLR                   0.349          tempWord_5_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[4]_AND_103_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_4_LDC (LATCH)
+  Destination Clock: enable_word[4]_AND_103_o falling
+
+  Data Path: enable to tempWord_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[4]_AND_104_o1 (enable_word[4]_AND_104_o)
+     LDC:CLR                   0.349          tempWord_4_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[3]_AND_105_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_3_LDC (LATCH)
+  Destination Clock: enable_word[3]_AND_105_o falling
+
+  Data Path: enable to tempWord_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[3]_AND_106_o1 (enable_word[3]_AND_106_o)
+     LDC:CLR                   0.349          tempWord_3_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[0]_AND_111_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_0_LDC (LATCH)
+  Destination Clock: enable_word[0]_AND_111_o falling
+
+  Data Path: enable to tempWord_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[0]_AND_112_o1 (enable_word[0]_AND_112_o)
+     LDC:CLR                   0.349          tempWord_0_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[2]_AND_107_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_2_LDC (LATCH)
+  Destination Clock: enable_word[2]_AND_107_o falling
+
+  Data Path: enable to tempWord_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[2]_AND_108_o1 (enable_word[2]_AND_108_o)
+     LDC:CLR                   0.349          tempWord_2_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enable_word[1]_AND_109_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.229ns (Levels of Logic = 2)
+  Source:            enable (PAD)
+  Destination:       tempWord_1_LDC (LATCH)
+  Destination Clock: enable_word[1]_AND_109_o falling
+
+  Data Path: enable to tempWord_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           113   0.001   0.498  enable_IBUF (enable_IBUF)
+     LUT2:I0->O            2   0.097   0.283  enable_word[1]_AND_110_o1 (enable_word[1]_AND_110_o)
+     LDC:CLR                   0.349          tempWord_1_LDC
+    ----------------------------------------
+    Total                      1.229ns (0.447ns logic, 0.782ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[55]_AND_1_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_55_LDC (LATCH)
+  Destination:       aWord<55> (PAD)
+  Source Clock:      enable_word[55]_AND_1_o falling
+
+  Data Path: tempWord_55_LDC to aWord<55>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_55_LDC (tempWord_55_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_551 (tempWord_55)
+     OBUF:I->O                 0.000          aWord_55_OBUF (aWord<55>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'C_FD2/newClock'
+  Total number of paths / destination ports: 112 / 56
+-------------------------------------------------------------------------
+Offset:              1.126ns (Levels of Logic = 2)
+  Source:            tempWord_55_P_55 (FF)
+  Destination:       aWord<55> (PAD)
+  Source Clock:      C_FD2/newClock rising
+
+  Data Path: tempWord_55_P_55 to aWord<55>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.361   0.379  tempWord_55_P_55 (tempWord_55_P_55)
+     LUT3:I1->O            3   0.097   0.289  tempWord_551 (tempWord_55)
+     OBUF:I->O                 0.000          aWord_55_OBUF (aWord<55>)
+    ----------------------------------------
+    Total                      1.126ns (0.458ns logic, 0.668ns route)
+                                       (40.7% logic, 59.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[54]_AND_3_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_54_LDC (LATCH)
+  Destination:       aWord<54> (PAD)
+  Source Clock:      enable_word[54]_AND_3_o falling
+
+  Data Path: tempWord_54_LDC to aWord<54>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_54_LDC (tempWord_54_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_541 (tempWord_54)
+     OBUF:I->O                 0.000          aWord_54_OBUF (aWord<54>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[53]_AND_5_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_53_LDC (LATCH)
+  Destination:       aWord<53> (PAD)
+  Source Clock:      enable_word[53]_AND_5_o falling
+
+  Data Path: tempWord_53_LDC to aWord<53>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_53_LDC (tempWord_53_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_531 (tempWord_53)
+     OBUF:I->O                 0.000          aWord_53_OBUF (aWord<53>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[52]_AND_7_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_52_LDC (LATCH)
+  Destination:       aWord<52> (PAD)
+  Source Clock:      enable_word[52]_AND_7_o falling
+
+  Data Path: tempWord_52_LDC to aWord<52>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_52_LDC (tempWord_52_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_521 (tempWord_52)
+     OBUF:I->O                 0.000          aWord_52_OBUF (aWord<52>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[51]_AND_9_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_51_LDC (LATCH)
+  Destination:       aWord<51> (PAD)
+  Source Clock:      enable_word[51]_AND_9_o falling
+
+  Data Path: tempWord_51_LDC to aWord<51>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_51_LDC (tempWord_51_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_511 (tempWord_51)
+     OBUF:I->O                 0.000          aWord_51_OBUF (aWord<51>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[50]_AND_11_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_50_LDC (LATCH)
+  Destination:       aWord<50> (PAD)
+  Source Clock:      enable_word[50]_AND_11_o falling
+
+  Data Path: tempWord_50_LDC to aWord<50>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_50_LDC (tempWord_50_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_501 (tempWord_50)
+     OBUF:I->O                 0.000          aWord_50_OBUF (aWord<50>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[49]_AND_13_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_49_LDC (LATCH)
+  Destination:       aWord<49> (PAD)
+  Source Clock:      enable_word[49]_AND_13_o falling
+
+  Data Path: tempWord_49_LDC to aWord<49>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_49_LDC (tempWord_49_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_491 (tempWord_49)
+     OBUF:I->O                 0.000          aWord_49_OBUF (aWord<49>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[48]_AND_15_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_48_LDC (LATCH)
+  Destination:       aWord<48> (PAD)
+  Source Clock:      enable_word[48]_AND_15_o falling
+
+  Data Path: tempWord_48_LDC to aWord<48>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_48_LDC (tempWord_48_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_481 (tempWord_48)
+     OBUF:I->O                 0.000          aWord_48_OBUF (aWord<48>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[47]_AND_17_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_47_LDC (LATCH)
+  Destination:       aWord<47> (PAD)
+  Source Clock:      enable_word[47]_AND_17_o falling
+
+  Data Path: tempWord_47_LDC to aWord<47>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_47_LDC (tempWord_47_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_471 (tempWord_47)
+     OBUF:I->O                 0.000          aWord_47_OBUF (aWord<47>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[46]_AND_19_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_46_LDC (LATCH)
+  Destination:       aWord<46> (PAD)
+  Source Clock:      enable_word[46]_AND_19_o falling
+
+  Data Path: tempWord_46_LDC to aWord<46>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_46_LDC (tempWord_46_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_461 (tempWord_46)
+     OBUF:I->O                 0.000          aWord_46_OBUF (aWord<46>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[45]_AND_21_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_45_LDC (LATCH)
+  Destination:       aWord<45> (PAD)
+  Source Clock:      enable_word[45]_AND_21_o falling
+
+  Data Path: tempWord_45_LDC to aWord<45>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_45_LDC (tempWord_45_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_451 (tempWord_45)
+     OBUF:I->O                 0.000          aWord_45_OBUF (aWord<45>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[44]_AND_23_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_44_LDC (LATCH)
+  Destination:       aWord<44> (PAD)
+  Source Clock:      enable_word[44]_AND_23_o falling
+
+  Data Path: tempWord_44_LDC to aWord<44>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_44_LDC (tempWord_44_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_441 (tempWord_44)
+     OBUF:I->O                 0.000          aWord_44_OBUF (aWord<44>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[43]_AND_25_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_43_LDC (LATCH)
+  Destination:       aWord<43> (PAD)
+  Source Clock:      enable_word[43]_AND_25_o falling
+
+  Data Path: tempWord_43_LDC to aWord<43>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_43_LDC (tempWord_43_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_431 (tempWord_43)
+     OBUF:I->O                 0.000          aWord_43_OBUF (aWord<43>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[42]_AND_27_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_42_LDC (LATCH)
+  Destination:       aWord<42> (PAD)
+  Source Clock:      enable_word[42]_AND_27_o falling
+
+  Data Path: tempWord_42_LDC to aWord<42>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_42_LDC (tempWord_42_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_421 (tempWord_42)
+     OBUF:I->O                 0.000          aWord_42_OBUF (aWord<42>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[41]_AND_29_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_41_LDC (LATCH)
+  Destination:       aWord<41> (PAD)
+  Source Clock:      enable_word[41]_AND_29_o falling
+
+  Data Path: tempWord_41_LDC to aWord<41>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_41_LDC (tempWord_41_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_411 (tempWord_41)
+     OBUF:I->O                 0.000          aWord_41_OBUF (aWord<41>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[40]_AND_31_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_40_LDC (LATCH)
+  Destination:       aWord<40> (PAD)
+  Source Clock:      enable_word[40]_AND_31_o falling
+
+  Data Path: tempWord_40_LDC to aWord<40>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_40_LDC (tempWord_40_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_401 (tempWord_40)
+     OBUF:I->O                 0.000          aWord_40_OBUF (aWord<40>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[39]_AND_33_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_39_LDC (LATCH)
+  Destination:       aWord<39> (PAD)
+  Source Clock:      enable_word[39]_AND_33_o falling
+
+  Data Path: tempWord_39_LDC to aWord<39>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_39_LDC (tempWord_39_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_391 (tempWord_39)
+     OBUF:I->O                 0.000          aWord_39_OBUF (aWord<39>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[38]_AND_35_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_38_LDC (LATCH)
+  Destination:       aWord<38> (PAD)
+  Source Clock:      enable_word[38]_AND_35_o falling
+
+  Data Path: tempWord_38_LDC to aWord<38>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_38_LDC (tempWord_38_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_381 (tempWord_38)
+     OBUF:I->O                 0.000          aWord_38_OBUF (aWord<38>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[37]_AND_37_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_37_LDC (LATCH)
+  Destination:       aWord<37> (PAD)
+  Source Clock:      enable_word[37]_AND_37_o falling
+
+  Data Path: tempWord_37_LDC to aWord<37>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_37_LDC (tempWord_37_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_371 (tempWord_37)
+     OBUF:I->O                 0.000          aWord_37_OBUF (aWord<37>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[36]_AND_39_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_36_LDC (LATCH)
+  Destination:       aWord<36> (PAD)
+  Source Clock:      enable_word[36]_AND_39_o falling
+
+  Data Path: tempWord_36_LDC to aWord<36>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_36_LDC (tempWord_36_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_361 (tempWord_36)
+     OBUF:I->O                 0.000          aWord_36_OBUF (aWord<36>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[35]_AND_41_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_35_LDC (LATCH)
+  Destination:       aWord<35> (PAD)
+  Source Clock:      enable_word[35]_AND_41_o falling
+
+  Data Path: tempWord_35_LDC to aWord<35>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_35_LDC (tempWord_35_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_351 (tempWord_35)
+     OBUF:I->O                 0.000          aWord_35_OBUF (aWord<35>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[34]_AND_43_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_34_LDC (LATCH)
+  Destination:       aWord<34> (PAD)
+  Source Clock:      enable_word[34]_AND_43_o falling
+
+  Data Path: tempWord_34_LDC to aWord<34>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_34_LDC (tempWord_34_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_341 (tempWord_34)
+     OBUF:I->O                 0.000          aWord_34_OBUF (aWord<34>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[33]_AND_45_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_33_LDC (LATCH)
+  Destination:       aWord<33> (PAD)
+  Source Clock:      enable_word[33]_AND_45_o falling
+
+  Data Path: tempWord_33_LDC to aWord<33>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_33_LDC (tempWord_33_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_331 (tempWord_33)
+     OBUF:I->O                 0.000          aWord_33_OBUF (aWord<33>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[32]_AND_47_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_32_LDC (LATCH)
+  Destination:       aWord<32> (PAD)
+  Source Clock:      enable_word[32]_AND_47_o falling
+
+  Data Path: tempWord_32_LDC to aWord<32>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_32_LDC (tempWord_32_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_321 (tempWord_32)
+     OBUF:I->O                 0.000          aWord_32_OBUF (aWord<32>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[31]_AND_49_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_31_LDC (LATCH)
+  Destination:       aWord<31> (PAD)
+  Source Clock:      enable_word[31]_AND_49_o falling
+
+  Data Path: tempWord_31_LDC to aWord<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_31_LDC (tempWord_31_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_311 (tempWord_31)
+     OBUF:I->O                 0.000          aWord_31_OBUF (aWord<31>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[30]_AND_51_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_30_LDC (LATCH)
+  Destination:       aWord<30> (PAD)
+  Source Clock:      enable_word[30]_AND_51_o falling
+
+  Data Path: tempWord_30_LDC to aWord<30>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_30_LDC (tempWord_30_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_301 (tempWord_30)
+     OBUF:I->O                 0.000          aWord_30_OBUF (aWord<30>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[29]_AND_53_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_29_LDC (LATCH)
+  Destination:       aWord<29> (PAD)
+  Source Clock:      enable_word[29]_AND_53_o falling
+
+  Data Path: tempWord_29_LDC to aWord<29>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_29_LDC (tempWord_29_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_291 (tempWord_29)
+     OBUF:I->O                 0.000          aWord_29_OBUF (aWord<29>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[28]_AND_55_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_28_LDC (LATCH)
+  Destination:       aWord<28> (PAD)
+  Source Clock:      enable_word[28]_AND_55_o falling
+
+  Data Path: tempWord_28_LDC to aWord<28>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_28_LDC (tempWord_28_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_281 (tempWord_28)
+     OBUF:I->O                 0.000          aWord_28_OBUF (aWord<28>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[27]_AND_57_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_27_LDC (LATCH)
+  Destination:       aWord<27> (PAD)
+  Source Clock:      enable_word[27]_AND_57_o falling
+
+  Data Path: tempWord_27_LDC to aWord<27>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_27_LDC (tempWord_27_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_271 (tempWord_27)
+     OBUF:I->O                 0.000          aWord_27_OBUF (aWord<27>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[26]_AND_59_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_26_LDC (LATCH)
+  Destination:       aWord<26> (PAD)
+  Source Clock:      enable_word[26]_AND_59_o falling
+
+  Data Path: tempWord_26_LDC to aWord<26>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_26_LDC (tempWord_26_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_261 (tempWord_26)
+     OBUF:I->O                 0.000          aWord_26_OBUF (aWord<26>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[25]_AND_61_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_25_LDC (LATCH)
+  Destination:       aWord<25> (PAD)
+  Source Clock:      enable_word[25]_AND_61_o falling
+
+  Data Path: tempWord_25_LDC to aWord<25>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_25_LDC (tempWord_25_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_251 (tempWord_25)
+     OBUF:I->O                 0.000          aWord_25_OBUF (aWord<25>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[24]_AND_63_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_24_LDC (LATCH)
+  Destination:       aWord<24> (PAD)
+  Source Clock:      enable_word[24]_AND_63_o falling
+
+  Data Path: tempWord_24_LDC to aWord<24>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_24_LDC (tempWord_24_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_241 (tempWord_24)
+     OBUF:I->O                 0.000          aWord_24_OBUF (aWord<24>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[23]_AND_65_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_23_LDC (LATCH)
+  Destination:       aWord<23> (PAD)
+  Source Clock:      enable_word[23]_AND_65_o falling
+
+  Data Path: tempWord_23_LDC to aWord<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_23_LDC (tempWord_23_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_231 (tempWord_23)
+     OBUF:I->O                 0.000          aWord_23_OBUF (aWord<23>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[22]_AND_67_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_22_LDC (LATCH)
+  Destination:       aWord<22> (PAD)
+  Source Clock:      enable_word[22]_AND_67_o falling
+
+  Data Path: tempWord_22_LDC to aWord<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_22_LDC (tempWord_22_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_221 (tempWord_22)
+     OBUF:I->O                 0.000          aWord_22_OBUF (aWord<22>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[21]_AND_69_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_21_LDC (LATCH)
+  Destination:       aWord<21> (PAD)
+  Source Clock:      enable_word[21]_AND_69_o falling
+
+  Data Path: tempWord_21_LDC to aWord<21>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_21_LDC (tempWord_21_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_211 (tempWord_21)
+     OBUF:I->O                 0.000          aWord_21_OBUF (aWord<21>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[20]_AND_71_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_20_LDC (LATCH)
+  Destination:       aWord<20> (PAD)
+  Source Clock:      enable_word[20]_AND_71_o falling
+
+  Data Path: tempWord_20_LDC to aWord<20>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_20_LDC (tempWord_20_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_201 (tempWord_20)
+     OBUF:I->O                 0.000          aWord_20_OBUF (aWord<20>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[19]_AND_73_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_19_LDC (LATCH)
+  Destination:       aWord<19> (PAD)
+  Source Clock:      enable_word[19]_AND_73_o falling
+
+  Data Path: tempWord_19_LDC to aWord<19>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_19_LDC (tempWord_19_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_191 (tempWord_19)
+     OBUF:I->O                 0.000          aWord_19_OBUF (aWord<19>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[18]_AND_75_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_18_LDC (LATCH)
+  Destination:       aWord<18> (PAD)
+  Source Clock:      enable_word[18]_AND_75_o falling
+
+  Data Path: tempWord_18_LDC to aWord<18>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_18_LDC (tempWord_18_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_181 (tempWord_18)
+     OBUF:I->O                 0.000          aWord_18_OBUF (aWord<18>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[17]_AND_77_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_17_LDC (LATCH)
+  Destination:       aWord<17> (PAD)
+  Source Clock:      enable_word[17]_AND_77_o falling
+
+  Data Path: tempWord_17_LDC to aWord<17>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_17_LDC (tempWord_17_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_171 (tempWord_17)
+     OBUF:I->O                 0.000          aWord_17_OBUF (aWord<17>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[16]_AND_79_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_16_LDC (LATCH)
+  Destination:       aWord<16> (PAD)
+  Source Clock:      enable_word[16]_AND_79_o falling
+
+  Data Path: tempWord_16_LDC to aWord<16>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_16_LDC (tempWord_16_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_161 (tempWord_16)
+     OBUF:I->O                 0.000          aWord_16_OBUF (aWord<16>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[15]_AND_81_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_15_LDC (LATCH)
+  Destination:       aWord<15> (PAD)
+  Source Clock:      enable_word[15]_AND_81_o falling
+
+  Data Path: tempWord_15_LDC to aWord<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_15_LDC (tempWord_15_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_151 (tempWord_15)
+     OBUF:I->O                 0.000          aWord_15_OBUF (aWord<15>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[14]_AND_83_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_14_LDC (LATCH)
+  Destination:       aWord<14> (PAD)
+  Source Clock:      enable_word[14]_AND_83_o falling
+
+  Data Path: tempWord_14_LDC to aWord<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_14_LDC (tempWord_14_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_141 (tempWord_14)
+     OBUF:I->O                 0.000          aWord_14_OBUF (aWord<14>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[13]_AND_85_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_13_LDC (LATCH)
+  Destination:       aWord<13> (PAD)
+  Source Clock:      enable_word[13]_AND_85_o falling
+
+  Data Path: tempWord_13_LDC to aWord<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_13_LDC (tempWord_13_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_131 (tempWord_13)
+     OBUF:I->O                 0.000          aWord_13_OBUF (aWord<13>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[12]_AND_87_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_12_LDC (LATCH)
+  Destination:       aWord<12> (PAD)
+  Source Clock:      enable_word[12]_AND_87_o falling
+
+  Data Path: tempWord_12_LDC to aWord<12>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_12_LDC (tempWord_12_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_121 (tempWord_12)
+     OBUF:I->O                 0.000          aWord_12_OBUF (aWord<12>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[11]_AND_89_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_11_LDC (LATCH)
+  Destination:       aWord<11> (PAD)
+  Source Clock:      enable_word[11]_AND_89_o falling
+
+  Data Path: tempWord_11_LDC to aWord<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_11_LDC (tempWord_11_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_111 (tempWord_11)
+     OBUF:I->O                 0.000          aWord_11_OBUF (aWord<11>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[10]_AND_91_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_10_LDC (LATCH)
+  Destination:       aWord<10> (PAD)
+  Source Clock:      enable_word[10]_AND_91_o falling
+
+  Data Path: tempWord_10_LDC to aWord<10>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_10_LDC (tempWord_10_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_101 (tempWord_10)
+     OBUF:I->O                 0.000          aWord_10_OBUF (aWord<10>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[9]_AND_93_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_9_LDC (LATCH)
+  Destination:       aWord<9> (PAD)
+  Source Clock:      enable_word[9]_AND_93_o falling
+
+  Data Path: tempWord_9_LDC to aWord<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_9_LDC (tempWord_9_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_91 (tempWord_9)
+     OBUF:I->O                 0.000          aWord_9_OBUF (aWord<9>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[8]_AND_95_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_8_LDC (LATCH)
+  Destination:       aWord<8> (PAD)
+  Source Clock:      enable_word[8]_AND_95_o falling
+
+  Data Path: tempWord_8_LDC to aWord<8>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_8_LDC (tempWord_8_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_81 (tempWord_8)
+     OBUF:I->O                 0.000          aWord_8_OBUF (aWord<8>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[7]_AND_97_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.369ns (Levels of Logic = 2)
+  Source:            tempWord_7_LDC (LATCH)
+  Destination:       aWord<7> (PAD)
+  Source Clock:      enable_word[7]_AND_97_o falling
+
+  Data Path: tempWord_7_LDC to aWord<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_7_LDC (tempWord_7_LDC)
+     LUT3:I0->O            3   0.097   0.289  tempWord_71 (tempWord_7)
+     OBUF:I->O                 0.000          aWord_7_OBUF (aWord<7>)
+    ----------------------------------------
+    Total                      1.369ns (0.569ns logic, 0.800ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[6]_AND_99_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.364ns (Levels of Logic = 2)
+  Source:            tempWord_6_LDC (LATCH)
+  Destination:       aWord<6> (PAD)
+  Source Clock:      enable_word[6]_AND_99_o falling
+
+  Data Path: tempWord_6_LDC to aWord<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_6_LDC (tempWord_6_LDC)
+     LUT3:I0->O            2   0.097   0.283  tempWord_61 (tempWord_6)
+     OBUF:I->O                 0.000          aWord_6_OBUF (aWord<6>)
+    ----------------------------------------
+    Total                      1.364ns (0.569ns logic, 0.795ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[5]_AND_101_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.364ns (Levels of Logic = 2)
+  Source:            tempWord_5_LDC (LATCH)
+  Destination:       aWord<5> (PAD)
+  Source Clock:      enable_word[5]_AND_101_o falling
+
+  Data Path: tempWord_5_LDC to aWord<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_5_LDC (tempWord_5_LDC)
+     LUT3:I0->O            2   0.097   0.283  tempWord_51 (tempWord_5)
+     OBUF:I->O                 0.000          aWord_5_OBUF (aWord<5>)
+    ----------------------------------------
+    Total                      1.364ns (0.569ns logic, 0.795ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[4]_AND_103_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.364ns (Levels of Logic = 2)
+  Source:            tempWord_4_LDC (LATCH)
+  Destination:       aWord<4> (PAD)
+  Source Clock:      enable_word[4]_AND_103_o falling
+
+  Data Path: tempWord_4_LDC to aWord<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_4_LDC (tempWord_4_LDC)
+     LUT3:I0->O            2   0.097   0.283  tempWord_41 (tempWord_4)
+     OBUF:I->O                 0.000          aWord_4_OBUF (aWord<4>)
+    ----------------------------------------
+    Total                      1.364ns (0.569ns logic, 0.795ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[3]_AND_105_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.364ns (Levels of Logic = 2)
+  Source:            tempWord_3_LDC (LATCH)
+  Destination:       aWord<3> (PAD)
+  Source Clock:      enable_word[3]_AND_105_o falling
+
+  Data Path: tempWord_3_LDC to aWord<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_3_LDC (tempWord_3_LDC)
+     LUT3:I0->O            2   0.097   0.283  tempWord_31 (tempWord_3)
+     OBUF:I->O                 0.000          aWord_3_OBUF (aWord<3>)
+    ----------------------------------------
+    Total                      1.364ns (0.569ns logic, 0.795ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[2]_AND_107_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.364ns (Levels of Logic = 2)
+  Source:            tempWord_2_LDC (LATCH)
+  Destination:       aWord<2> (PAD)
+  Source Clock:      enable_word[2]_AND_107_o falling
+
+  Data Path: tempWord_2_LDC to aWord<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_2_LDC (tempWord_2_LDC)
+     LUT3:I0->O            2   0.097   0.283  tempWord_21 (tempWord_2)
+     OBUF:I->O                 0.000          aWord_2_OBUF (aWord<2>)
+    ----------------------------------------
+    Total                      1.364ns (0.569ns logic, 0.795ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[1]_AND_109_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.364ns (Levels of Logic = 2)
+  Source:            tempWord_1_LDC (LATCH)
+  Destination:       aWord<1> (PAD)
+  Source Clock:      enable_word[1]_AND_109_o falling
+
+  Data Path: tempWord_1_LDC to aWord<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_1_LDC (tempWord_1_LDC)
+     LUT3:I0->O            2   0.097   0.283  tempWord_11 (tempWord_1)
+     OBUF:I->O                 0.000          aWord_1_OBUF (aWord<1>)
+    ----------------------------------------
+    Total                      1.364ns (0.569ns logic, 0.795ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'enable_word[0]_AND_111_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.364ns (Levels of Logic = 2)
+  Source:            tempWord_0_LDC (LATCH)
+  Destination:       aWord<0> (PAD)
+  Source Clock:      enable_word[0]_AND_111_o falling
+
+  Data Path: tempWord_0_LDC to aWord<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.511  tempWord_0_LDC (tempWord_0_LDC)
+     LUT3:I0->O            2   0.097   0.283  tempWord_01 (tempWord_0)
+     OBUF:I->O                 0.000          aWord_0_OBUF (aWord<0>)
+    ----------------------------------------
+    Total                      1.364ns (0.569ns logic, 0.795ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock C_FD2/newClock
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+C_FD2/newClock          |    0.845|         |         |         |
+enable_word[0]_AND_111_o|         |    1.088|         |         |
+enable_word[10]_AND_91_o|         |    1.088|         |         |
+enable_word[11]_AND_89_o|         |    1.088|         |         |
+enable_word[12]_AND_87_o|         |    1.088|         |         |
+enable_word[13]_AND_85_o|         |    1.088|         |         |
+enable_word[14]_AND_83_o|         |    1.088|         |         |
+enable_word[15]_AND_81_o|         |    1.088|         |         |
+enable_word[16]_AND_79_o|         |    1.088|         |         |
+enable_word[17]_AND_77_o|         |    1.088|         |         |
+enable_word[18]_AND_75_o|         |    1.088|         |         |
+enable_word[19]_AND_73_o|         |    1.088|         |         |
+enable_word[1]_AND_109_o|         |    1.088|         |         |
+enable_word[20]_AND_71_o|         |    1.088|         |         |
+enable_word[21]_AND_69_o|         |    1.088|         |         |
+enable_word[22]_AND_67_o|         |    1.088|         |         |
+enable_word[23]_AND_65_o|         |    1.088|         |         |
+enable_word[24]_AND_63_o|         |    1.088|         |         |
+enable_word[25]_AND_61_o|         |    1.088|         |         |
+enable_word[26]_AND_59_o|         |    1.088|         |         |
+enable_word[27]_AND_57_o|         |    1.088|         |         |
+enable_word[28]_AND_55_o|         |    1.088|         |         |
+enable_word[29]_AND_53_o|         |    1.088|         |         |
+enable_word[2]_AND_107_o|         |    1.088|         |         |
+enable_word[30]_AND_51_o|         |    1.088|         |         |
+enable_word[31]_AND_49_o|         |    1.088|         |         |
+enable_word[32]_AND_47_o|         |    1.088|         |         |
+enable_word[33]_AND_45_o|         |    1.088|         |         |
+enable_word[34]_AND_43_o|         |    1.088|         |         |
+enable_word[35]_AND_41_o|         |    1.088|         |         |
+enable_word[36]_AND_39_o|         |    1.088|         |         |
+enable_word[37]_AND_37_o|         |    1.088|         |         |
+enable_word[38]_AND_35_o|         |    1.088|         |         |
+enable_word[39]_AND_33_o|         |    1.088|         |         |
+enable_word[3]_AND_105_o|         |    1.088|         |         |
+enable_word[40]_AND_31_o|         |    1.088|         |         |
+enable_word[41]_AND_29_o|         |    1.088|         |         |
+enable_word[42]_AND_27_o|         |    1.088|         |         |
+enable_word[43]_AND_25_o|         |    1.088|         |         |
+enable_word[44]_AND_23_o|         |    1.088|         |         |
+enable_word[45]_AND_21_o|         |    1.088|         |         |
+enable_word[46]_AND_19_o|         |    1.088|         |         |
+enable_word[47]_AND_17_o|         |    1.088|         |         |
+enable_word[48]_AND_15_o|         |    1.088|         |         |
+enable_word[49]_AND_13_o|         |    1.088|         |         |
+enable_word[4]_AND_103_o|         |    1.088|         |         |
+enable_word[50]_AND_11_o|         |    1.088|         |         |
+enable_word[51]_AND_9_o |         |    1.088|         |         |
+enable_word[52]_AND_7_o |         |    1.088|         |         |
+enable_word[53]_AND_5_o |         |    1.088|         |         |
+enable_word[54]_AND_3_o |         |    1.088|         |         |
+enable_word[55]_AND_1_o |         |    1.088|         |         |
+enable_word[5]_AND_101_o|         |    1.088|         |         |
+enable_word[6]_AND_99_o |         |    1.088|         |         |
+enable_word[7]_AND_97_o |         |    1.088|         |         |
+enable_word[8]_AND_95_o |         |    1.088|         |         |
+enable_word[9]_AND_93_o |         |    1.088|         |         |
+------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    2.533|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 53.00 secs
+Total CPU time to Xst completion: 53.46 secs
+ 
+--> 
+
+Total memory usage is 404444 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

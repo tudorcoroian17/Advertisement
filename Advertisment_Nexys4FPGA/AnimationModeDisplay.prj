@@ -1,0 +1,6 @@
+vhdl work "FrequencyDivider2.vhd"
+vhdl work "Animation4_ShowOneByOne.vhd"
+vhdl work "Animation3_ShiftRightToLeft.vhd"
+vhdl work "Animation2_SlideLeftToRight.vhd"
+vhdl work "Animation1-Flickering.vhd"
+vhdl work "AnimationModeDisplay.vhd"

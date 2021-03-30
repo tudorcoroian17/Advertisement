@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/.Xilinx/AdvertismentPrjDSD/AnodeSelector.xst" -ofn "C:/.Xilinx/AdvertismentPrjDSD/AnodeSelector.syr" 

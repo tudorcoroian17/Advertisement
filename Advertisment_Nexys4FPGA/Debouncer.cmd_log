@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/.Xilinx/AdvertismentPrjDSD/Debouncer.xst" -ofn "C:/.Xilinx/AdvertismentPrjDSD/Debouncer.syr" 

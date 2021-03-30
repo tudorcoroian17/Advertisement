@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="AdvertismentPrjDSD.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Animation2_SlideLeftToRight.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Animation2_SlideLeftToRight.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Animation2_SlideLeftToRight.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Animation2_SlideLeftToRight.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Animation2_SlideLeftToRight.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Animation2_SlideLeftToRight.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Animation2_SlideLeftToRight.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Animation2_SlideLeftToRight.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Animation2_SlideLeftToRight_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Animation3_SlideRightToLeft.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Animation3_SlideRightToLeft.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Animation3_SlideRightToLeft.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Animation3_SlideRightToLeft.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Animation3_SlideRightToLeft.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Animation3_SlideRightToLeft.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Animation3_SlideRightToLeft.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Animation3_SlideRightToLeft.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Animation3_SlideRightToLeft_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Animation4_ShowOneByOne.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Animation4_ShowOneByOne.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Animation4_ShowOneByOne.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Animation4_ShowOneByOne.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Animation4_ShowOneByOne.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Animation4_ShowOneByOne.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Animation4_ShowOneByOne.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Animation4_ShowOneByOne.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Animation4_ShowOneByOne_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="AnimationModeDisplay.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="AnimationModeDisplay.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="AnimationModeDisplay.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="AnimationModeDisplay.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AnimationModeDisplay.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="AnimationModeDisplay.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="AnimationModeDisplay.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="AnimationModeDisplay.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AnimationModeDisplay_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="AnodeSelector.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="AnodeSelector.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="AnodeSelector.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="AnodeSelector.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AnodeSelector.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="AnodeSelector.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="AnodeSelector.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="AnodeSelector.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AnodeSelector_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Debouncer.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Debouncer.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Debouncer.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Debouncer.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Debouncer.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Debouncer.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Debouncer.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Debouncer.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Debouncer_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Debouncer_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="FrequencyDivider.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="FrequencyDivider.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="FrequencyDivider.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="FrequencyDivider.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FrequencyDivider.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="FrequencyDivider.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="FrequencyDivider.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="FrequencyDivider.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FrequencyDivider2.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="FrequencyDivider2.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="FrequencyDivider2.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="FrequencyDivider_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="FrequencyDivider_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="FrequencyDivider_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LettersROM.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="LettersROM.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="LettersROM.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="LoadModeDisplay.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="LoadModeDisplay.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="LoadModeDisplay.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="LoadModeDisplay.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LoadModeDisplay.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="LoadModeDisplay.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="LoadModeDisplay.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="LoadModeDisplay.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="LoadModeDisplay_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MainAdv.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MainAdv.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MainAdv.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MainAdv.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MainAdv.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MainAdv.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MainAdv.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MainAdv.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MainAdv_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MainAdv_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1555869747" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1555869746">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1556314462" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4614150538638392289" xil_pn:start_ts="1556314462">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1556314462" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="5716273991133066951" xil_pn:start_ts="1556314462">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1556314462" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1556314462">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1556314462" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3360715551631607551" xil_pn:start_ts="1556314462">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1556314462" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1556314462">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1556314462" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2601914322025783535" xil_pn:start_ts="1556314462">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1556316455" xil_pn:in_ck="3555007655266816691" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2553615330685210660" xil_pn:start_ts="1556316375">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Animation2_SlideLeftToRight.ngr"/>
+      <outfile xil_pn:name="Animation4_ShowOneByOne.ngr"/>
+      <outfile xil_pn:name="AnimationModeDisplay.ngr"/>
+      <outfile xil_pn:name="AnodeSelector.ngr"/>
+      <outfile xil_pn:name="Debouncer.ngr"/>
+      <outfile xil_pn:name="FrequencyDivider.ngr"/>
+      <outfile xil_pn:name="LoadModeDisplay.ngr"/>
+      <outfile xil_pn:name="MainAdv.lso"/>
+      <outfile xil_pn:name="MainAdv.ngc"/>
+      <outfile xil_pn:name="MainAdv.ngr"/>
+      <outfile xil_pn:name="MainAdv.prj"/>
+      <outfile xil_pn:name="MainAdv.stx"/>
+      <outfile xil_pn:name="MainAdv.syr"/>
+      <outfile xil_pn:name="MainAdv.xst"/>
+      <outfile xil_pn:name="MainAdv_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

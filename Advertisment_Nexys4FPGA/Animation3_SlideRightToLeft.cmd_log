@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/.Xilinx/AdvertismentPrjDSD/Animation3_SlideRightToLeft.xst" -ofn "C:/.Xilinx/AdvertismentPrjDSD/Animation3_SlideRightToLeft.syr" 

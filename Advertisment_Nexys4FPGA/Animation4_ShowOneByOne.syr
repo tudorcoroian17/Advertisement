@@ -1,0 +1,875 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Reading design: Animation4_ShowOneByOne.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Animation4_ShowOneByOne.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Animation4_ShowOneByOne"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Animation4_ShowOneByOne
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\.Xilinx\AdvertismentPrjDSD\FrequencyDivider2.vhd" into library work
+Parsing entity <FrequencyDivider2>.
+Parsing architecture <arch4> of entity <frequencydivider2>.
+Parsing VHDL file "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd" into library work
+Parsing entity <Animation4_ShowOneByOne>.
+Parsing architecture <arch10> of entity <animation4_showonebyone>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Animation4_ShowOneByOne> (architecture <arch10>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd" Line 26: counter should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd" Line 33: word should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd" Line 34: word should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd" Line 35: word should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd" Line 36: word should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd" Line 37: word should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd" Line 38: word should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd" Line 39: word should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd" Line 40: word should be on the sensitivity list of the process
+
+Elaborating entity <FrequencyDivider2> (architecture <arch4>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "C:\.Xilinx\AdvertismentPrjDSD\FrequencyDivider2.vhd" Line 19: Using initial value "111111111111111111111111111" for number since it is never assigned
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Animation4_ShowOneByOne>.
+    Related source file is "C:\.Xilinx\AdvertismentPrjDSD\Animation4_ShowOneByOne.vhd".
+    Found 4-bit register for signal <counter>.
+    Found 4-bit adder for signal <counter[3]_GND_6_o_add_0_OUT> created at line 24.
+    Found 16x8-bit Read Only RAM for signal <_n0146>
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<55>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<54>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<53>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<52>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<51>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<50>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<49>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<48>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<47>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<46>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<45>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<44>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<43>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<42>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<41>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<40>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<39>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<38>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<37>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<36>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<35>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<34>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<33>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<32>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <aWord<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred  56 Latch(s).
+	inferred  56 Multiplexer(s).
+Unit <Animation4_ShowOneByOne> synthesized.
+
+Synthesizing Unit <FrequencyDivider2>.
+    Related source file is "C:\.Xilinx\AdvertismentPrjDSD\FrequencyDivider2.vhd".
+        counterSize = 26
+    Found 1-bit register for signal <newClock>.
+    Found 27-bit register for signal <counter>.
+    Found 27-bit adder for signal <counter[26]_GND_63_o_add_0_OUT> created at line 23.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+Unit <FrequencyDivider2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 2
+ 27-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 27-bit register                                       : 1
+ 4-bit register                                        : 1
+# Latches                                              : 56
+ 1-bit latch                                           : 56
+# Multiplexers                                         : 56
+ 1-bit 2-to-1 multiplexer                              : 56
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Animation4_ShowOneByOne>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0146> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Animation4_ShowOneByOne> synthesized (advanced).
+
+Synthesizing (advanced) Unit <FrequencyDivider2>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <FrequencyDivider2> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 2
+ 27-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Multiplexers                                         : 56
+ 1-bit 2-to-1 multiplexer                              : 56
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Animation4_ShowOneByOne> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Animation4_ShowOneByOne, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Animation4_ShowOneByOne.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 172
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 26
+#      LUT2                        : 73
+#      LUT3                        : 2
+#      LUT4                        : 9
+#      LUT5                        : 1
+#      LUT6                        : 4
+#      MUXCY                       : 26
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 88
+#      FD                          : 16
+#      FDC                         : 4
+#      FDR                         : 12
+#      LD                          : 56
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 112
+#      IBUF                        : 56
+#      OBUF                        : 56
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              32  out of  126800     0%  
+ Number of Slice LUTs:                  117  out of  63400     0%  
+    Number used as Logic:               117  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    118
+   Number with an unused Flip Flop:      86  out of    118    72%  
+   Number with an unused LUT:             1  out of    118     0%  
+   Number of fully used LUT-FF pairs:    31  out of    118    26%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                         113
+ Number of bonded IOBs:                 113  out of    210    53%  
+    IOB Flip Flops/Latches:              56
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Mram__n01467(Mram__n014671:O)      | NONE(*)(aWord_55)      | 7     |
+Mram__n01466(Mram__n014661:O)      | NONE(*)(aWord_48)      | 7     |
+Mram__n01465(Mram__n014651:O)      | NONE(*)(aWord_40)      | 7     |
+Mram__n01464(Mram__n0146411:O)     | NONE(*)(aWord_33)      | 7     |
+Mram__n01463(Mram__n014631:O)      | NONE(*)(aWord_26)      | 7     |
+Mram__n01462(Mram__n014621:O)      | NONE(*)(aWord_19)      | 7     |
+Mram__n01461(Mram__n0146111:O)     | NONE(*)(aWord_12)      | 7     |
+Mram__n0146(Mram__n01461:O)        | NONE(*)(aWord_5)       | 7     |
+clock                              | BUFGP                  | 28    |
+C_FD2/newClock                     | NONE(counter_0)        | 4     |
+-----------------------------------+------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.533ns (Maximum Frequency: 394.772MHz)
+   Minimum input arrival time before clock: 0.393ns
+   Maximum output required time after clock: 0.751ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 2.533ns (frequency: 394.772MHz)
+  Total number of paths / destination ports: 1108 / 40
+-------------------------------------------------------------------------
+Delay:               2.533ns (Levels of Logic = 2)
+  Source:            C_FD2/counter_23 (FF)
+  Destination:       C_FD2/counter_15 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: C_FD2/counter_23 to C_FD2/counter_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.361   0.688  C_FD2/counter_23 (C_FD2/counter_23)
+     LUT5:I0->O            1   0.097   0.556  C_FD2/_n0012<26>6 (C_FD2/_n0012<26>5)
+     LUT6:I2->O           27   0.097   0.385  C_FD2/_n0012<26>7 (C_FD2/_n0012)
+     FDR:R                     0.349          C_FD2/counter_15
+    ----------------------------------------
+    Total                      2.533ns (0.904ns logic, 1.629ns route)
+                                       (35.7% logic, 64.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'C_FD2/newClock'
+  Clock period: 1.592ns (frequency: 628.305MHz)
+  Total number of paths / destination ports: 18 / 8
+-------------------------------------------------------------------------
+Delay:               1.592ns (Levels of Logic = 1)
+  Source:            counter_3 (FF)
+  Destination:       counter_0 (FF)
+  Source Clock:      C_FD2/newClock rising
+  Destination Clock: C_FD2/newClock rising
+
+  Data Path: counter_3 to counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             66   0.361   0.491  counter_3 (counter_3)
+     LUT2:I0->O            4   0.097   0.293  counter[3]_counter[0]_AND_1_o1 (counter[3]_counter[0]_AND_1_o)
+     FDC:CLR                   0.349          counter_0
+    ----------------------------------------
+    Total                      1.592ns (0.807ns logic, 0.785ns route)
+                                       (50.7% logic, 49.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n01467'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.393ns (Levels of Logic = 2)
+  Source:            word<55> (PAD)
+  Destination:       aWord_55 (LATCH)
+  Destination Clock: Mram__n01467 falling
+
+  Data Path: word<55> to aWord_55
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.295  word_55_IBUF (word_55_IBUF)
+     LUT2:I1->O            1   0.097   0.000  Mmux_counter[3]_GND_6_o_Mux_3_o11 (counter[3]_GND_6_o_Mux_3_o)
+     LD:D                     -0.028          aWord_55
+    ----------------------------------------
+    Total                      0.393ns (0.098ns logic, 0.295ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n01466'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.393ns (Levels of Logic = 2)
+  Source:            word<48> (PAD)
+  Destination:       aWord_48 (LATCH)
+  Destination Clock: Mram__n01466 falling
+
+  Data Path: word<48> to aWord_48
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.295  word_48_IBUF (word_48_IBUF)
+     LUT2:I1->O            1   0.097   0.000  Mmux_counter[3]_GND_6_o_Mux_17_o11 (counter[3]_GND_6_o_Mux_17_o)
+     LD:D                     -0.028          aWord_48
+    ----------------------------------------
+    Total                      0.393ns (0.098ns logic, 0.295ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n01465'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.393ns (Levels of Logic = 2)
+  Source:            word<40> (PAD)
+  Destination:       aWord_40 (LATCH)
+  Destination Clock: Mram__n01465 falling
+
+  Data Path: word<40> to aWord_40
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.295  word_40_IBUF (word_40_IBUF)
+     LUT2:I1->O            1   0.097   0.000  Mmux_counter[3]_GND_6_o_Mux_33_o11 (counter[3]_GND_6_o_Mux_33_o)
+     LD:D                     -0.028          aWord_40
+    ----------------------------------------
+    Total                      0.393ns (0.098ns logic, 0.295ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n01464'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.393ns (Levels of Logic = 2)
+  Source:            word<33> (PAD)
+  Destination:       aWord_33 (LATCH)
+  Destination Clock: Mram__n01464 falling
+
+  Data Path: word<33> to aWord_33
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.295  word_33_IBUF (word_33_IBUF)
+     LUT2:I1->O            1   0.097   0.000  Mmux_counter[3]_GND_6_o_Mux_47_o11 (counter[3]_GND_6_o_Mux_47_o)
+     LD:D                     -0.028          aWord_33
+    ----------------------------------------
+    Total                      0.393ns (0.098ns logic, 0.295ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n01463'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.393ns (Levels of Logic = 2)
+  Source:            word<26> (PAD)
+  Destination:       aWord_26 (LATCH)
+  Destination Clock: Mram__n01463 falling
+
+  Data Path: word<26> to aWord_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.295  word_26_IBUF (word_26_IBUF)
+     LUT2:I1->O            1   0.097   0.000  Mmux_counter[3]_GND_6_o_Mux_61_o11 (counter[3]_GND_6_o_Mux_61_o)
+     LD:D                     -0.028          aWord_26
+    ----------------------------------------
+    Total                      0.393ns (0.098ns logic, 0.295ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n01462'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.393ns (Levels of Logic = 2)
+  Source:            word<19> (PAD)
+  Destination:       aWord_19 (LATCH)
+  Destination Clock: Mram__n01462 falling
+
+  Data Path: word<19> to aWord_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.295  word_19_IBUF (word_19_IBUF)
+     LUT2:I1->O            1   0.097   0.000  Mmux_counter[3]_GND_6_o_Mux_75_o11 (counter[3]_GND_6_o_Mux_75_o)
+     LD:D                     -0.028          aWord_19
+    ----------------------------------------
+    Total                      0.393ns (0.098ns logic, 0.295ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n01461'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.393ns (Levels of Logic = 2)
+  Source:            word<12> (PAD)
+  Destination:       aWord_12 (LATCH)
+  Destination Clock: Mram__n01461 falling
+
+  Data Path: word<12> to aWord_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.295  word_12_IBUF (word_12_IBUF)
+     LUT2:I1->O            1   0.097   0.000  Mmux_counter[3]_GND_6_o_Mux_89_o11 (counter[3]_GND_6_o_Mux_89_o)
+     LD:D                     -0.028          aWord_12
+    ----------------------------------------
+    Total                      0.393ns (0.098ns logic, 0.295ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n0146'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.393ns (Levels of Logic = 2)
+  Source:            word<5> (PAD)
+  Destination:       aWord_5 (LATCH)
+  Destination Clock: Mram__n0146 falling
+
+  Data Path: word<5> to aWord_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.295  word_5_IBUF (word_5_IBUF)
+     LUT2:I1->O            1   0.097   0.000  Mmux_counter[3]_GND_6_o_Mux_103_o11 (counter[3]_GND_6_o_Mux_103_o)
+     LD:D                     -0.028          aWord_5
+    ----------------------------------------
+    Total                      0.393ns (0.098ns logic, 0.295ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n01467'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            aWord_55 (LATCH)
+  Destination:       aWord<55> (PAD)
+  Source Clock:      Mram__n01467 falling
+
+  Data Path: aWord_55 to aWord<55>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  aWord_55 (aWord_55)
+     OBUF:I->O                 0.000          aWord_55_OBUF (aWord<55>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n01466'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            aWord_48 (LATCH)
+  Destination:       aWord<48> (PAD)
+  Source Clock:      Mram__n01466 falling
+
+  Data Path: aWord_48 to aWord<48>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  aWord_48 (aWord_48)
+     OBUF:I->O                 0.000          aWord_48_OBUF (aWord<48>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n01465'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            aWord_41 (LATCH)
+  Destination:       aWord<41> (PAD)
+  Source Clock:      Mram__n01465 falling
+
+  Data Path: aWord_41 to aWord<41>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  aWord_41 (aWord_41)
+     OBUF:I->O                 0.000          aWord_41_OBUF (aWord<41>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n01464'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            aWord_34 (LATCH)
+  Destination:       aWord<34> (PAD)
+  Source Clock:      Mram__n01464 falling
+
+  Data Path: aWord_34 to aWord<34>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  aWord_34 (aWord_34)
+     OBUF:I->O                 0.000          aWord_34_OBUF (aWord<34>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n01463'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            aWord_27 (LATCH)
+  Destination:       aWord<27> (PAD)
+  Source Clock:      Mram__n01463 falling
+
+  Data Path: aWord_27 to aWord<27>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  aWord_27 (aWord_27)
+     OBUF:I->O                 0.000          aWord_27_OBUF (aWord<27>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n01462'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            aWord_20 (LATCH)
+  Destination:       aWord<20> (PAD)
+  Source Clock:      Mram__n01462 falling
+
+  Data Path: aWord_20 to aWord<20>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  aWord_20 (aWord_20)
+     OBUF:I->O                 0.000          aWord_20_OBUF (aWord<20>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n01461'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            aWord_13 (LATCH)
+  Destination:       aWord<13> (PAD)
+  Source Clock:      Mram__n01461 falling
+
+  Data Path: aWord_13 to aWord<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  aWord_13 (aWord_13)
+     OBUF:I->O                 0.000          aWord_13_OBUF (aWord<13>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n0146'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            aWord_6 (LATCH)
+  Destination:       aWord<6> (PAD)
+  Source Clock:      Mram__n0146 falling
+
+  Data Path: aWord_6 to aWord<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  aWord_6 (aWord_6)
+     OBUF:I->O                 0.000          aWord_6_OBUF (aWord<6>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock C_FD2/newClock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C_FD2/newClock |    1.592|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n0146
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C_FD2/newClock |         |         |    0.949|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n01461
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C_FD2/newClock |         |         |    0.949|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n01462
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C_FD2/newClock |         |         |    0.949|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n01463
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C_FD2/newClock |         |         |    0.949|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n01464
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C_FD2/newClock |         |         |    0.949|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n01465
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C_FD2/newClock |         |         |    0.949|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n01466
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C_FD2/newClock |         |         |    0.949|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n01467
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C_FD2/newClock |         |         |    0.949|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    2.533|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 54.00 secs
+Total CPU time to Xst completion: 53.40 secs
+ 
+--> 
+
+Total memory usage is 404324 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   66 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
